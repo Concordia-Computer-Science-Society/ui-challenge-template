@@ -45,7 +45,6 @@ form.addEventListener("submit", (event) => {
     "Contact by: " + contact
   );
   // >>> IDEAS: a fake loading bar first? "Are you REALLY sure?" x10?
-  //     Try: Tricks.fakeLoading("Submitting...", 8, () => alert("Done!"));
 });
 
 // ---------------------------------------------------------------------

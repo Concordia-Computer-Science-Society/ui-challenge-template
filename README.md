@@ -39,3 +39,56 @@ YOU DON'T HAVE TO USE THE TEMPLATE
 ## Running the Starters
 **Java:** see `java-starter/README.md`
 **Web:** see `web-starter/README.md`
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+## Getting started, for the noobz.
+
+(IF YOU WENT TO OUR GITHUB LESSON) You now have your own repo. Don't work in the template itself tho!
+
+## 2. Copy your repo's link
+1. On **your new repo's** page, click the green **Code** button.
+2. Make sure **HTTPS** is selected.
+3. Click the copy icon. The link looks like:
+   `https://github.com/your-name/cursed-ui-your-team.git`
+
+## 3. Clone it to your Desktop
+
+### Option A: VS Code (easier)
+1. Open VS Code.
+2. Press **Cmd + Shift + P** (Mac) or **Ctrl + Shift + P** (Windows).
+3. Type **Git: Clone** and press Enter.
+4. Paste your link and press Enter.
+5. Choose your **Desktop** as the location.
+6. Click **Open** when it asks.
+
+### Option B: Terminal(More Aura)
+1. Open Terminal (Mac) or Git Bash / Command Prompt (Windows).
+2. Run:
+```
+   cd Desktop
+   git clone PASTE-YOUR-LINK-HERE
+```
+3. A folder with your repo's name appears on your Desktop. Open it in VS Code.
+
+If it asks you to sign in, choose **Sign in with your browser** and log into GitHub.
+
+## 4. Save your work to GitHub
+Do THIS EVERY TIME you get something working:
+example in terminal because president aura farms
+
+### Or in the terminal
+```
+git add .
+git commit -m "Describe what you changed"
+git push
+```
+
+Then refresh your repo and yeah..
+
+

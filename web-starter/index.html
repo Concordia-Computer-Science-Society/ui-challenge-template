@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Totally Normal Sign-Up Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--
+    =====================================================================
+     Cursed UI Challenge - Web Starter
+    =====================================================================
+     This is a NORMAL usable sign-up form.
+     Your job: make it awful. (It still has to work in the end!)
+
+     Files:
+       index.html  - the parts of the page (you are here)
+       style.css   - how it looks
+       script.js   - what it does
+       tricks.js   - a toolbox of ready-made chaos (nothing runs until you call it)
+
+     Look for   >>> IDEAS  comments for ideas.
+    =====================================================================
+  -->
+
+  <main class="card">
+    <h1>Sign Up</h1>
+    <p class="subtitle">Very normal. Nothing weird here.</p>
+
+    <form id="form" novalidate>
+      <!-- Name -->
+      <label for="name">Name</label>
+      <input id="name" type="text" autocomplete="off">
+      <!-- >>> IDEAS: what if the letters came out backwards? -->
+
+      <!-- Phone -->
+      <label for="phone">Phone number</label>
+      <input id="phone" type="tel" autocomplete="off">
+      <!-- >>> IDEAS: phone number by slider? Ten dropdowns? A math quiz? -->
+
+      <!-- Age (slider) -->
+      <label for="age">Age: <span id="age-value">18</span></label>
+      <input id="age" type="range" min="0" max="120" value="18">
+      <!-- >>> IDEA: max="1000000"? A slider that slides backwards? -->
+
+      <!-- Favorite color (dropdown) -->
+      <label for="color">Favorite color</label>
+      <select id="color">
+        <option>Red</option>
+        <option>Orange</option>
+        <option>Yellow</option>
+        <option>Green</option>
+        <option>Blue</option>
+        <option>Purple</option>
+      </select>
+      <!-- >>> IDEA: 500 options? Names that don't match the color? -->
+
+      <!-- Contact method (radio buttons) -->
+      <fieldset>
+        <legend>Contact me by</legend>
+        <label class="inline"><input type="radio" name="contact" value="Email" checked> Email</label>
+        <label class="inline"><input type="radio" name="contact" value="Text"> Text</label>
+        <label class="inline"><input type="radio" name="contact" value="Carrier pigeon"> Carrier pigeon</label>
+      </fieldset>
+      <!-- >>>IDEA: what if clicking one picked a different one? -->
+
+      <!-- Terms (checkbox) -->
+      <label class="inline">
+        <input id="terms" type="checkbox"> I agree to the terms
+      </label>
+      <!-- >>> IDEA: terms that are 10,000 words long? A checkbox that un-checks itself? -->
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button type="button" id="clear">Clear</button>
+        <button type="submit" id="submit">Submit</button>
+      </div>
+      <!-- >>> IDEA: swap the labels? Make Submit run away? -->
+    </form>
+
+    <p id="status" class="status">Fill out the form and press Submit.</p>
+  </main>
+
+
+  <script src="script.js"></script> <!-- DONT DELETE THIS... it connects this html page to the js page-->
+</body>
+</html>

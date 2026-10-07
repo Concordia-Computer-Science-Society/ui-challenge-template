@@ -1,0 +1,127 @@
+/* =====================================================================
+   Perfectly reasonable styles. Please ruin them.
+   >>> IDEAS: Comic Sans? Yellow text on white? Everything
+       rotated 1 degree? Font size 6px? Go wild.
+   ===================================================================== */
+
+/* Colors here so you can change the whole page at once. */
+:root {
+  --page-bg: #f4f4f7;
+  --card-bg: #ffffff;
+  --text: #222222;
+  --muted: #666666;
+  --accent: #3b6ef5;
+  --error: #c62828;
+  --success: #2e7d32;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--page-bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 16px;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 380px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0.25rem 0 1.5rem;
+  color: var(--muted);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+label {
+  font-weight: 600;
+  margin-top: 0.6rem;
+}
+
+/* Labels that sit next to a checkbox or radio button */
+label.inline {
+  font-weight: normal;
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-top: 0.6rem;
+  padding: 0.5rem 0.8rem;
+}
+
+legend {
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1.2rem;
+}
+
+button {
+  flex: 1;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#submit {
+  background: var(--accent);
+  color: white;
+}
+
+#clear {
+  background: #e4e4ea;
+}
+
+.status {
+  margin: 1rem 0 0;
+  color: var(--muted);
+}
+
+.status.error {
+  color: var(--error);
+}
+
+.status.success {
+  color: var(--success);
+}

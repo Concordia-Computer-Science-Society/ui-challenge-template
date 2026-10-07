@@ -42,6 +42,7 @@ public class Main {
     private static JButton submitButton;
     private static JButton clearButton;
     private static JLabel statusLabel;
+    
 
     public static void main(String[] args) {
         // Swing windows should be created on the "Event Dispatch Thread".
@@ -121,8 +122,10 @@ public class Main {
         clearButton.addActionListener(e -> onClear());
         form.add(clearButton);
         form.add(submitButton);
+
         // >>> IDEAS: swap their labels? Make Submit run away?
-        
+        // DELETE the // to show the example add // before next line to remove it:
+        Example.makeRunAway(submitButton);
 
         // --- Status bar ---------------------------------------------
         statusLabel = new JLabel(" Fill out the form and press Submit.");
@@ -177,9 +180,6 @@ public class Main {
         JOptionPane.showMessageDialog(frame, summary);
         // >>> IDEAS: a fake loading bar first? A "Are you REALLY sure?"
 
-
-       //Example.makeRunAway(submitButton);
-
     }
 
     private static void onClear() {
@@ -191,8 +191,6 @@ public class Main {
         termsCheckBox.setSelected(false);
         setStatus("Form cleared.");
         // >>> IDEAS: what if Clear... didn't clear? Or cleared slowly?
-
-        //Example.makeRunAway(clearButton);
 
 
     }
